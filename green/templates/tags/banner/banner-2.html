@@ -1,0 +1,6 @@
+{% for one in banner|slice:":1" %}
+<a href="{% url 'banner-two-detail' one.slug %}">
+        <img src="{{ MEDIA }}{{ one.image }}" class="img-responsive">
+    </a>
+
+{% endfor %}

@@ -1,0 +1,10 @@
+<div class="row">
+{% for one in banner|slice:":6" %}
+    <div class="col-md-4 hover">
+    <a href="{% url 'banner-one-detail' one.slug %}">
+        <img src="{{ MEDIA }}{{ one.image }}" class="img-responsive">
+    </a>
+    </div>
+
+{% endfor %}
+</div>
