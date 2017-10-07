@@ -135,11 +135,11 @@ USE_TZ = True
 # ]
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_ROOT = 'I:/windows/job/clinic/staticfilesclinic/static/'
+STATIC_ROOT = 'D:/pyton/clinic/staticfilesclinic/static/'
 STATIC_URL = '/static/'
 
 # MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
-MEDIA_ROOT = 'I:/windows/job/clinic/staticfilesclinic/media/'
+MEDIA_ROOT = 'D:/pyton/clinic/staticfilesclinic/media/'
 MEDIA_URL = '/media/'
 
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'

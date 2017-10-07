@@ -1,5 +1,5 @@
-{% for one in opinions|slice:":3" %}
-<div class="col-md-4">
+{% for one in opinions|slice:":4" %}
+<div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <a href="{% url 'opinion-detail' one.slug %}">

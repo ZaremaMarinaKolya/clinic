@@ -4,25 +4,56 @@ body {
 .main-header{
     padding: 2% auto;
 }
+.navbar-inverse {
+    background-color: #6f5c3e;
+    border-color: #655338;
+}
+.navbar {
+    border-radius: 0;
+}
 .logo-block{
     padding: 0;
 }
 .logo-block img{
     max-width: 60%;
 }
-.info-block .tel, .info-block .adress{
-    clear: right;
+.info-block .tel{
+        clear: right;
     position: relative;
     float: right;
+    text-align: right;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+    width: 100%;
+}
+.info-block .adress{
+    color: #6f5c3e;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.info-block .rejim{
+    font-size: 16px;
+    color: #6f5c3e;
+    font-weight: 400;
+        clear: right;
+    position: relative;
+    float: right;
+}
+.info-block .btn {
+    display: inline-block;
+    padding: 6px 39px;
+    margin-top: 4%;
+}
+.info-block .fa-phone{
+     margin-right: 5%;
 }
 .info-block .tel{
 color: #74a143;
 }
 .info-block{
-padding-top: 37px;
+padding-top: 27px;
 }
 .navbar-inverse .navbar-brand{
     color: #74a143;
@@ -30,12 +61,61 @@ padding-top: 37px;
 .navbar{
     margin-bottom: 0px;
 }
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+    font-size: 16px;
+}
 .baner-row1 .col-md-4, .baner-row2{
 padding: 10px 10px;
 }
+/*Services*/
 .baners-add{
 margin-top: 100px
 }
+.baners-add .innerblock, .news, .testimonials{
+    margin-top: 5%;
+}
 .hover img:hover{
 opacity: 0.8;
+}
+/*Buttons*/
+.btn-default{
+    color: #fff;
+    background-color: #74a142;
+    border-color: #ccc;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 39px;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 5px auto #74a142;
+    outline-offset: -2px;
+}
+/*Icons*/
+.fa-fw {
+    width: 1.285714em;
+    text-align: center;
+    color: #74a142;
+}
+/*News*/
+.news{
+    background-color: #74a142;
+}
+.news .page-header{
+    color: #fff;
+}
+/*Modal*/
+.modal-content{
+        padding: 20px;
+}
+.form-title{
+        margin-top: 35px;
+    background-color: #6f5c3e;
+    padding: 20px 10px;
+        color: white;
+}
+form .row {
+    margin-right: 0;
+    margin-left: 0;
 }
