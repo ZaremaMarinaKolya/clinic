@@ -9,6 +9,7 @@ from spoiler.models import Spoiler1, Spoiler2, Spoiler3
 from html_parts.models import HtmlOne, HtmlTwo, HtmlThree, HtmlFour, HtmlFive, HtmlSix, HtmlSeven, HtmlEight, \
     HtmlNine, HtmlTen
 from main.models import PageCategory, Page
+from about.models import Team
 
 
 register = template.Library()
@@ -215,3 +216,16 @@ def cat_menu(context):
         page['list_five'] = Page.objects.filter(category__slug=one.slug, type_page='style-five').order_by('number')
         menu.append(page)
     return {'menu': menu}
+
+
+# Coworkers
+@register.inclusion_tag('tags/about/team-1.html', takes_context=True)
+def team_one(context):
+    team = Team.objects.order_by('number')
+    return {'team': team, 'MEDIA': MEDIA_URL}
+
+
+@register.inclusion_tag('tags/about/team-2.html', takes_context=True)
+def team_two(context):
+    team = Team.objects.order_by('number')
+    return {'team': team, 'MEDIA': MEDIA_URL}
