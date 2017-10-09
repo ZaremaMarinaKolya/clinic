@@ -1,4 +1,4 @@
-green/settings.py
+/green/settings.py
 .idea/clinic.iml
 .idea/misc.xml
 .idea/modules.xml
@@ -120,3 +120,4 @@ spoiler/migrations/__pycache__/0009_delete_spoilerpagebanner.cpython-36.pyc
 spoiler/migrations/__pycache__/0010_auto_20171004_0754.cpython-36.pyc
 spoiler/migrations/__pycache__/__init__.cpython-36.pyc
 
+staticfilesclinic/static/
